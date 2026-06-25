@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+  font-family: 'Cairo', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  transition: all 0.3s ease;
+  
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+input {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* Animation */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+  nav,
+  footer {
+    padding: 15px 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    height: auto !important;
+    gap: 15px;
+    padding: 15px !important;
+  }
+
+  h1 {
+    font-size: 32px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 600px) {
+
+  nav input {
+    width: 100px !important;
+  }
+
+  button {
+    font-size: 11px !important;
+  }
+}
