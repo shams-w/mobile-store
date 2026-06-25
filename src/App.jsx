@@ -12,7 +12,7 @@ import ph5 from "./assets/photo5.jpeg";
 import ph6 from "./assets/photo6.jpeg";
 import ph7 from "./assets/photo7.jpeg";
 
-import applelogo from "./assets/APPLELOGO.png"
+import applelogo from "./assets/applelogo.png";
 
 // ─── EMAILJS CONFIG ───────────────────────────────────────────────────────────
 const EMAILJS_SERVICE_ID  = "ahour_store";
